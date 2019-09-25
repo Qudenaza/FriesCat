@@ -2,6 +2,8 @@ $dark-color-1: #111111;
 $white-color: #ffffff;
 $border-color-1: #e6e6e6;
 $green-color-1: #68b738;
+$green-color-2: #65A93C;
+$green-color-3: #5eaa2f;
 
 
 $ease-main: 0.3s ease;
@@ -9,29 +11,3 @@ $ease-main: 0.3s ease;
 $breakpoints: ('desktop': 1440px,
   'tablet': 768px,
   'phone': 320px);
-
-@font-face {
-  font-family: 'Oswald';
-  font-style: normal;
-  font-weight: 500;
-  src: url('../fonts/oswaldmedium.otf');
-  src:
-    url('../fonts/oswaldmedium.eot') format('eot'),
-    url('../fonts/oswaldmedium.woff2') format('woff2'),
-    url('../fonts/oswaldmedium.woff') format('woff'),
-    url('../fonts/oswaldmedium.ttf') format('truetype'),
-    url('../fonts/oswaldmedium.svg#oswaldmedium') format('svg');
-}
-
-@font-face {
-  font-family: 'Oswald';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../fonts/OswaldRegular.otf');
-  src:
-    url('../fonts/OswaldRegular.eot') format('eot'),
-    url('../fonts/OswaldRegular.woff2') format('woff2'),
-    url('../fonts/OswaldRegular.woff') format('woff'),
-    url('../fonts/OswaldRegular.ttf') format('truetype'),
-    url('../fonts/OswaldRegular.svg#OswaldRegular') format('svg');
-}

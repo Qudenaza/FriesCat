@@ -11,6 +11,7 @@
   }
 
   @include screen('desktop') {
+    z-index: 2;
     padding-top: 53px;
   }
 
@@ -65,6 +66,7 @@
   &__list {
     position: absolute;
     top: 100%;
+    z-index: 2;
     list-style: none;
     transition: all $ease-main;
 
@@ -78,13 +80,15 @@
   &__item {
     margin: 0 -20px;
     padding: 15px;
-    border-bottom: 1px solid $border-color-1;
     text-align: center;
+    border-bottom: 1px solid $border-color-1;
+    background: $white-color;
 
     @include screen('tablet') {
       margin: 0;
       padding: 0;
       border: none;
+      background: transparent;
 
       &:not(:first-child) {
         margin-left: 35px;
@@ -109,6 +113,15 @@
     text-decoration: none;
     color: $dark-color-1;
     cursor: pointer;
+    transition: opacity $ease-main;
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
 
     &--active::after {
       @include pseudo;
@@ -129,6 +142,7 @@
 
     @include screen('desktop') {
       font-size: 20px;
+      color: $white-color;
     }
   }
 
