@@ -10,7 +10,7 @@
   @include screen('tablet') {
     display: flex;
     flex-direction: column;
-    padding: 43px 20px 22px 116px;
+    padding: 43px 20px 0 116px;
     text-align: left;
     color: $dark-color-1;
     background: none;
@@ -18,7 +18,7 @@
 
   @include screen('desktop') {
     margin-top: -130px;
-    padding: 223px 20px 22px 190px;
+    padding: 223px 20px 50px 190px;
     background: url('../img/index-background-desktop@1x.jpg') no-repeat;
     background-position: top right;
   }
@@ -41,12 +41,11 @@
     order: 1;
     font-size: 36px;
     font-weight: 400;
-    line-height: 0.9;
+    line-height: 1;
 
     @include screen('tablet') {
       max-width: 70%;
       font-size: 60px;
-      line-height: 1;
     }
 
     @include screen('desktop') {
@@ -102,5 +101,3 @@
     }
   }
 }
-
-
