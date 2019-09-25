@@ -1,0 +1,11 @@
+.page-header {
+  padding: 0 20px;
+
+  @include screen('tablet') {
+    padding: 0 30px;
+  }
+
+  @include screen('desktop') {
+    padding: 0 110px;
+  }
+}
