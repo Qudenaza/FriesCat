@@ -73,6 +73,24 @@ body {
   src: url("../fonts/OswaldRegular.otf");
   src: url("../fonts/OswaldRegular.eot") format("eot"), url("../fonts/OswaldRegular.woff2") format("woff2"), url("../fonts/OswaldRegular.woff") format("woff"), url("../fonts/OswaldRegular.ttf") format("truetype"), url("../fonts/OswaldRegular.svg#OswaldRegular") format("svg"); }
 
+.title {
+  font-size: 36px;
+  font-weight: 400;
+  color: #111111; }
+  @media only screen and (min-width: 768px) {
+    .title {
+      font-size: 60px; } }
+
+.text {
+  font-family: 'Arial', serif;
+  font-size: 14px;
+  line-height: 1.3;
+  color: #444444; }
+  @media only screen and (min-width: 768px) {
+    .text {
+      font-size: 16px;
+      line-height: 1.5; } }
+
 .page-nav {
   position: relative;
   display: -webkit-box;
@@ -478,17 +496,11 @@ body {
   .diet__text {
     margin: 31px 0 0 -2px;
     padding-bottom: 21px;
-    font-family: 'Arial', serif;
-    font-size: 14px;
-    line-height: 1.3;
-    color: #444444;
     border-bottom: 1px solid #d9d9d9; }
     @media only screen and (min-width: 768px) {
       .diet__text {
         max-width: 55%;
         margin: 17px 0 0 0;
-        font-size: 16px;
-        line-height: 1.5;
         border: none; } }
     @media only screen and (min-width: 1440px) {
       .diet__text {
@@ -528,5 +540,98 @@ body {
           right: -53px; } }
     .diet__link:hover::after {
       background-position: left center; }
+
+.instructions {
+  padding: 18px 20px 40px 20px; }
+  @media only screen and (min-width: 768px) {
+    .instructions {
+      padding: 30px 30px 40px 30px; } }
+  @media only screen and (min-width: 1440px) {
+    .instructions {
+      padding: 57px 110px 40px 110px; } }
+  .instructions__text {
+    margin-left: 20px; }
+    @media only screen and (min-width: 768px) {
+      .instructions__text {
+        margin: 32px 0 0 0;
+        max-width: 76%; } }
+    @media only screen and (min-width: 1440px) {
+      .instructions__text {
+        max-width: 100%; } }
+  .instructions__list {
+    padding-top: 32px;
+    list-style: none; }
+    @media only screen and (min-width: 768px) {
+      .instructions__list {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        padding-top: 58px; } }
+  .instructions__item {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    @media only screen and (min-width: 768px) {
+      .instructions__item {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+        max-width: 324px;
+        padding-bottom: 50px; }
+        .instructions__item--1 {
+          background: url("../img/1@1x.png") no-repeat 126px 0; }
+        .instructions__item--2 {
+          background: url("../img/2@1x.png") no-repeat 122px 0; }
+        .instructions__item--3 {
+          background: url("../img/3@1x.png") no-repeat 126px 0; }
+        .instructions__item--4 {
+          background: url("../img/4@1x.png") no-repeat 126px 0; } }
+    @media only screen and (min-width: 1440px) {
+      .instructions__item {
+        max-width: 240px;
+        min-height: 234px;
+        -ms-flex-negative: 0;
+            flex-shrink: 0; } }
+    .instructions__item:not(:last-child) {
+      margin-bottom: 20px; }
+      @media only screen and (min-width: 768px) {
+        .instructions__item:not(:last-child) {
+          margin-bottom: 0; } }
+    @media only screen and (min-width: 768px) {
+      .instructions__item:first-child {
+        margin-bottom: 83px; } }
+    @media only screen and (min-width: 1440px) {
+      .instructions__item:first-child {
+        margin-bottom: 0; } }
+  .instructions__image {
+    width: 60px;
+    height: 60px;
+    -ms-flex-negative: 0;
+        flex-shrink: 0; }
+    @media only screen and (min-width: 768px) {
+      .instructions__image {
+        width: 80px;
+        height: 80px; } }
+    .instructions__image--leaf {
+      background: url("../img/leaf@1x.png") no-repeat center, #68b738; }
+    .instructions__image--powder {
+      background: url("../img/powder@1x.png") no-repeat center, #68b738; }
+    .instructions__image--food {
+      background: url("../img/dining@1x.png") no-repeat center, #68b738; }
+    .instructions__image--clock {
+      background: url("../img/clock@1x.png") no-repeat center, #68b738; }
 
 /*# sourceMappingURL=style.css.map */

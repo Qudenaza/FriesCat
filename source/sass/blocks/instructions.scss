@@ -1,0 +1,116 @@
+.instructions {
+  padding: 18px 20px 40px 20px;
+
+  @include screen('tablet') {
+    padding: 30px 30px 40px 30px;
+  }
+
+  @include screen('desktop') {
+    padding: 57px 110px 40px 110px;
+  }
+
+  &__text {
+    margin-left: 20px;
+
+    @include screen('tablet') {
+      margin: 32px 0 0 0;
+      max-width: 76%;
+    }
+
+    @include screen('desktop') {
+      max-width: 100%;
+    }
+  }
+
+  &__list {
+    padding-top: 32px;
+    list-style: none;
+
+    @include screen('tablet') {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding-top: 58px;
+    }
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    @include screen('tablet') {
+      flex-direction: column;
+      align-items: flex-start;
+      max-width: 324px;
+      padding-bottom: 50px;
+
+      &--1 {
+        background: url('../img/1@1x.png') no-repeat 126px 0;
+      }
+
+      &--2 {
+        background: url('../img/2@1x.png') no-repeat 122px 0;
+      }
+
+      &--3 {
+        background: url('../img/3@1x.png') no-repeat 126px 0;
+      }
+
+      &--4 {
+        background: url('../img/4@1x.png') no-repeat 126px 0;
+      }
+    }
+
+    @include screen('desktop') {
+      max-width: 240px;
+      min-height: 234px;
+      flex-shrink: 0; // FOR IE
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+
+      @include screen('tablet') {
+        margin-bottom: 0;
+      }
+    }
+
+    &:first-child {
+      @include screen('tablet') {
+        margin-bottom: 83px;
+      }
+
+      @include screen('desktop') {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__image {
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+
+    @include screen('tablet') {
+      width: 80px;
+      height: 80px;
+    }
+
+    &--leaf {
+      background: url('../img/leaf@1x.png') no-repeat center, $green-color-1;
+    }
+
+    &--powder {
+      background: url('../img/powder@1x.png') no-repeat center, $green-color-1;
+    }
+
+    &--food {
+      background: url('../img/dining@1x.png') no-repeat center, $green-color-1;
+    }
+
+    &--clock {
+      background: url('../img/clock@1x.png') no-repeat center, $green-color-1;
+    }
+  }
+}
